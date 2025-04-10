@@ -81,3 +81,16 @@ static void Main4(string[] args)
     }
     Console.WriteLine(counter);
 }
+
+static void Main5(string[] args)
+{
+    string[] str = { "Malika", "Akbar", "Ilhom", "Javohir", "Ali" };
+
+    string s = Console.ReadLine();
+    bool b = false;
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (str[i].ToLower() == s.ToLower()) b = true; break;
+    }
+    Console.WriteLine(b);
+}
