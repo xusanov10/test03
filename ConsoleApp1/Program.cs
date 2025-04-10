@@ -14,3 +14,31 @@ static void Main(string[] args)
     }
     Console.WriteLine(counter / 10);
 }
+
+static void Main1(string[] args)
+{
+    int[] ints = new int[10];
+
+    for (int i = 0; i < 10; i++)
+    {
+        Random rnd = new Random();
+
+        ints[i] = rnd.Next(1, 15);
+    }
+
+    int max = 0;
+
+    int min = 20;
+
+    for (int i = 0; i < ints.Length; i++)
+    {
+        Console.WriteLine(ints[i]);
+
+        if (ints[i] > max) max = ints[i];
+
+        if (ints[i] < min) min = ints[i];
+    }
+    Console.WriteLine(" eng katta " + max);
+
+    Console.WriteLine(" eng kichik " + min);
+}
