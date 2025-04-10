@@ -42,3 +42,30 @@ static void Main1(string[] args)
 
     Console.WriteLine(" eng kichik " + min);
 }
+
+static void Main3(string[] args)
+{
+    int[] ints = new int[20];
+
+    for (int i = 0; i < 10; i++)
+    {
+        Random rnd = new Random();
+
+        ints[i] = rnd.Next(1, 100);
+    }
+
+    for (int i = 0; i < ints.Length; i++)
+    {
+        Console.Write(ints[i] + " ");
+    }
+    Console.WriteLine();
+    Console.WriteLine();
+
+    for (int i = 0; i < ints.Length; i++)
+    {
+        if (ints[i] % 2 == 0)
+        {
+            Console.Write(ints[i] + " ");
+        }
+    }
+}
