@@ -69,3 +69,15 @@ static void Main3(string[] args)
         }
     }
 }
+
+static void Main4(string[] args)
+{
+    int[] ints = { 1, 2, 3, 4, 5 };
+
+    string counter = "";
+    for (int i = 0; i < ints.Length; i++)
+    {
+        counter = Convert.ToString(ints[i] + " ") + counter;
+    }
+    Console.WriteLine(counter);
+}
